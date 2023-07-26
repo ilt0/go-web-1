@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subdomain Results</title>
+</head>
+<body>
+    <h1>Subdomain Results for {{.Domain}}</h1>
+    <ul>
+        {{range $subdomain, $ip := .Results}}
+        <li>{{ $subdomain }}: {{ $ip }}</li>
+        {{end}}
+    </ul>
+</body>
+</html>
